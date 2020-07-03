@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		88C941F124AF46EF000C4C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C941F024AF46EF000C4C73 /* AppDelegate.swift */; };
 		88C941F324AF46EF000C4C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C941F224AF46EF000C4C73 /* SceneDelegate.swift */; };
-		88C941F524AF46EF000C4C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C941F424AF46EF000C4C73 /* ViewController.swift */; };
 		88C941F824AF46EF000C4C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C941F624AF46EF000C4C73 /* Main.storyboard */; };
 		88C941FA24AF46F0000C4C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C941F924AF46F0000C4C73 /* Assets.xcassets */; };
 		88C941FD24AF46F0000C4C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C941FB24AF46F0000C4C73 /* LaunchScreen.storyboard */; };
+		88C9420724AF472E000C4C73 /* CalculateBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9420624AF472E000C4C73 /* CalculateBrain.swift */; };
+		88C9420C24AF4771000C4C73 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9420B24AF4771000C4C73 /* ResultViewController.swift */; };
+		88C9420E24AF4789000C4C73 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9420D24AF4789000C4C73 /* BMI.swift */; };
+		88C9421024AF49EA000C4C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9420F24AF49EA000C4C73 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88C941ED24AF46EF000C4C73 /* BMI-Caculator-IOS-13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI-Caculator-IOS-13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C941F024AF46EF000C4C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C941F224AF46EF000C4C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88C941F424AF46EF000C4C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88C941F724AF46EF000C4C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88C941F924AF46F0000C4C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C941FC24AF46F0000C4C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88C941FE24AF46F0000C4C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C9420624AF472E000C4C73 /* CalculateBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBrain.swift; sourceTree = "<group>"; };
+		88C9420B24AF4771000C4C73 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		88C9420D24AF4789000C4C73 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		88C9420F24AF49EA000C4C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				88C941F024AF46EF000C4C73 /* AppDelegate.swift */,
 				88C941F224AF46EF000C4C73 /* SceneDelegate.swift */,
-				88C941F424AF46EF000C4C73 /* ViewController.swift */,
-				88C941F624AF46EF000C4C73 /* Main.storyboard */,
+				88C9420824AF4738000C4C73 /* Model */,
+				88C9420524AF4706000C4C73 /* Controller */,
+				88C9420424AF46FE000C4C73 /* View */,
 				88C941F924AF46F0000C4C73 /* Assets.xcassets */,
 				88C941FB24AF46F0000C4C73 /* LaunchScreen.storyboard */,
 				88C941FE24AF46F0000C4C73 /* Info.plist */,
 			);
 			path = "BMI-Caculator-IOS-13";
+			sourceTree = "<group>";
+		};
+		88C9420424AF46FE000C4C73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88C941F624AF46EF000C4C73 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88C9420524AF4706000C4C73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88C9420B24AF4771000C4C73 /* ResultViewController.swift */,
+				88C9420F24AF49EA000C4C73 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88C9420824AF4738000C4C73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88C9420624AF472E000C4C73 /* CalculateBrain.swift */,
+				88C9420D24AF4789000C4C73 /* BMI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C941F524AF46EF000C4C73 /* ViewController.swift in Sources */,
+				88C9420C24AF4771000C4C73 /* ResultViewController.swift in Sources */,
+				88C9420724AF472E000C4C73 /* CalculateBrain.swift in Sources */,
 				88C941F124AF46EF000C4C73 /* AppDelegate.swift in Sources */,
+				88C9421024AF49EA000C4C73 /* ViewController.swift in Sources */,
+				88C9420E24AF4789000C4C73 /* BMI.swift in Sources */,
 				88C941F324AF46EF000C4C73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GU8RGUT43;
 				INFOPLIST_FILE = "BMI-Caculator-IOS-13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GU8RGUT43;
 				INFOPLIST_FILE = "BMI-Caculator-IOS-13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
