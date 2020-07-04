@@ -127,9 +127,9 @@
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-Tc-0cH">
-                                <rect key="frame" x="100" y="767" width="214" height="49"/>
+                                <rect key="frame" x="110" y="767" width="194" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="RecalulateButton"/>
+                                <state key="normal" image="RECALCULATE"/>
                                 <connections>
                                     <action selector="recalculatePressed:" destination="nkZ-aT-iCk" eventType="touchUpInside" id="0wI-d5-f14"/>
                                 </connections>
@@ -171,7 +171,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RecalulateButton" width="214" height="49"/>
+        <image name="RECALCULATE" width="194" height="50"/>
         <image name="button" width="166" height="50"/>
     </resources>
 </document>
