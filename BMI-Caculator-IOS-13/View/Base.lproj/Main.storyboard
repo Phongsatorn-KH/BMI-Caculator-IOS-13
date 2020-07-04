@@ -15,26 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-5V-0qe" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="212.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-m3-YOp">
-                                        <rect key="frame" x="20" y="29" width="374" height="273"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="RZg-m3-YOp" firstAttribute="leading" secondItem="4gk-5V-0qe" secondAttribute="leading" constant="20" id="ekA-AY-DPU"/>
-                                    <constraint firstItem="RZg-m3-YOp" firstAttribute="centerX" secondItem="4gk-5V-0qe" secondAttribute="centerX" id="kLs-bX-YdN"/>
-                                    <constraint firstAttribute="bottom" secondItem="RZg-m3-YOp" secondAttribute="bottom" constant="-89.5" id="plw-8E-mTk"/>
-                                    <constraint firstItem="RZg-m3-YOp" firstAttribute="top" secondItem="4gk-5V-0qe" secondAttribute="top" constant="29" id="ye2-Ui-YAb"/>
-                                </constraints>
-                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="saF-aT-b7u">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIT-aQ-CTu">
+                                <rect key="frame" x="20" y="151" width="374" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-JI-eRC" userLabel="Stack View Height">
-                                <rect key="frame" x="150" y="360" width="150" height="86"/>
+                                <rect key="frame" x="150" y="514" width="150" height="86"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-Y4-5rQ">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -54,14 +45,14 @@
                                 </constraints>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.57999998331069946" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="nPf-jO-icF">
-                                <rect key="frame" x="18" y="481" width="378" height="31"/>
+                                <rect key="frame" x="18" y="608" width="378" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="heightSliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="4Og-G6-lyX"/>
                                 </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W39-YN-cgV" userLabel="Stack View Weight">
-                                <rect key="frame" x="150" y="586.5" width="114" height="78"/>
+                                <rect key="frame" x="150" y="646" width="114" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTU-L3-GzL">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
@@ -78,14 +69,14 @@
                                 </subviews>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="20" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="iax-3B-yvQ">
-                                <rect key="frame" x="18" y="683.5" width="378" height="31"/>
+                                <rect key="frame" x="18" y="732" width="378" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="weightSliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="gNn-Ba-3cE"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-6z-9jp">
-                                <rect key="frame" x="124" y="766" width="166" height="50"/>
+                                <rect key="frame" x="124" y="794" width="166" height="50"/>
                                 <state key="normal" image="button"/>
                                 <connections>
                                     <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="weA-uO-CHK"/>
@@ -94,22 +85,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nPf-jO-icF" firstAttribute="centerX" secondItem="4gk-5V-0qe" secondAttribute="centerX" id="8BV-Tm-IOU"/>
+                            <constraint firstItem="saF-aT-b7u" firstAttribute="top" secondItem="MIv-r8-2CF" secondAttribute="top" id="10n-mz-Irm"/>
+                            <constraint firstItem="saF-aT-b7u" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" id="6Z6-hz-myU"/>
+                            <constraint firstItem="gIT-aQ-CTu" firstAttribute="top" secondItem="MIv-r8-2CF" secondAttribute="top" constant="151" id="AXU-Yt-hFJ"/>
                             <constraint firstItem="9JS-Tx-iGC" firstAttribute="trailing" secondItem="GQq-6z-9jp" secondAttribute="trailing" constant="124" id="Fqo-Wf-l2w"/>
                             <constraint firstItem="W39-YN-cgV" firstAttribute="centerX" secondItem="MIv-r8-2CF" secondAttribute="centerX" id="KV0-Tf-G3l"/>
-                            <constraint firstItem="4gk-5V-0qe" firstAttribute="top" secondItem="MIv-r8-2CF" secondAttribute="topMargin" constant="-44" id="NLW-gh-B57"/>
+                            <constraint firstAttribute="trailing" secondItem="gIT-aQ-CTu" secondAttribute="trailing" constant="20" id="Kgx-ua-l80"/>
                             <constraint firstItem="nPf-jO-icF" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" constant="20" id="Omu-uA-0ma"/>
-                            <constraint firstItem="W39-YN-cgV" firstAttribute="top" secondItem="nPf-jO-icF" secondAttribute="bottom" constant="75.5" id="Qfe-xg-NDw"/>
+                            <constraint firstItem="W39-YN-cgV" firstAttribute="top" secondItem="nPf-jO-icF" secondAttribute="bottom" constant="8" id="Qfe-xg-NDw"/>
                             <constraint firstItem="GQq-6z-9jp" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" constant="124" id="SiN-gH-bXH"/>
-                            <constraint firstItem="nPf-jO-icF" firstAttribute="top" secondItem="LyI-JI-eRC" secondAttribute="bottom" constant="35" id="TNk-Rf-Z5H"/>
                             <constraint firstItem="9JS-Tx-iGC" firstAttribute="trailing" secondItem="nPf-jO-icF" secondAttribute="trailing" constant="20" id="UdR-PO-hWy"/>
-                            <constraint firstItem="4gk-5V-0qe" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" id="VS0-ss-lIm"/>
-                            <constraint firstItem="GQq-6z-9jp" firstAttribute="top" secondItem="iax-3B-yvQ" secondAttribute="bottom" constant="52.5" id="XxZ-Pq-J75"/>
-                            <constraint firstItem="iax-3B-yvQ" firstAttribute="top" secondItem="W39-YN-cgV" secondAttribute="bottom" constant="19" id="ZgM-f1-Dy3"/>
+                            <constraint firstItem="GQq-6z-9jp" firstAttribute="top" secondItem="iax-3B-yvQ" secondAttribute="bottom" constant="32" id="XxZ-Pq-J75"/>
+                            <constraint firstItem="nPf-jO-icF" firstAttribute="top" secondItem="LyI-JI-eRC" secondAttribute="bottom" constant="8" id="ZIR-9u-7Gz"/>
+                            <constraint firstItem="iax-3B-yvQ" firstAttribute="top" secondItem="W39-YN-cgV" secondAttribute="bottom" constant="8" id="ZgM-f1-Dy3"/>
                             <constraint firstItem="LyI-JI-eRC" firstAttribute="centerX" secondItem="MIv-r8-2CF" secondAttribute="centerX" constant="18" id="cfQ-5m-D1v"/>
                             <constraint firstItem="iax-3B-yvQ" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" constant="20" id="cuH-Vk-llY"/>
-                            <constraint firstAttribute="bottom" secondItem="4gk-5V-0qe" secondAttribute="bottom" constant="683.5" id="neq-s7-CHH"/>
-                            <constraint firstAttribute="bottom" secondItem="nPf-jO-icF" secondAttribute="bottom" constant="385" id="rYi-TX-TUj"/>
+                            <constraint firstAttribute="bottom" secondItem="saF-aT-b7u" secondAttribute="bottom" id="g0B-0z-LPR"/>
+                            <constraint firstItem="saF-aT-b7u" firstAttribute="trailing" secondItem="9JS-Tx-iGC" secondAttribute="trailing" id="jYQ-rZ-cik"/>
+                            <constraint firstItem="gIT-aQ-CTu" firstAttribute="leading" secondItem="9JS-Tx-iGC" secondAttribute="leading" constant="20" id="lya-4f-mUy"/>
+                            <constraint firstAttribute="bottom" secondItem="nPf-jO-icF" secondAttribute="bottom" constant="258" id="rYi-TX-TUj"/>
                             <constraint firstItem="9JS-Tx-iGC" firstAttribute="trailing" secondItem="iax-3B-yvQ" secondAttribute="trailing" constant="20" id="x8O-ZG-qNB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9JS-Tx-iGC"/>
@@ -189,6 +183,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="500" height="500"/>
         <image name="RECALCULATE" width="194" height="50"/>
         <image name="button" width="166" height="50"/>
     </resources>
