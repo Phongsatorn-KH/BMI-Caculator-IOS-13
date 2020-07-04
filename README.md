@@ -5,6 +5,6 @@
 ## Demo 
 how to use
 
-![Demo](https://gifs.com/gif/calculatebmi-BNAwMW)
+![Demo](https://j.gifs.com/BNAwMW.gif)
 
 
